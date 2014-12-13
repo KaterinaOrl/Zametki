@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settingsArray">
+        <item>Цвет фона  </item>
+        <item>Выборка по</item>
+    </string-array>
+    <string-array name="colorArray">
+        <item>Желтый</item>
+        <item>Серый</item>
+        <item>Голубой</item>
+        <item>Зеленый</item>
+
+    </string-array>
+
+    <string-array name="sortArray">
+        <item>Алфавиту</item>
+        <item>Дате</item>
+        <item>Только важные</item>
+        <item>Все</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemEditing">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        class="com.orl.katerina.zametki.CustomView.SlideMenu"
+        android:id="@+id/slideMenu"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow_main"
+        android:orientation="vertical"
+        >
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxStatus"
+            android:id="@+id/checkBoxStatus"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+
+            />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBoxNotify"
+                android:id="@+id/checkBoxNotify"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:checked="false"
+                />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etText"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:padding="10dp"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:hint="@string/Hint"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/top_layout"
+        android:background="@color/yellow_top">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnItemAdd"
+            android:src="@drawable/ic_save"
+            android:padding="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+           />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnItemDel"
+            android:src="@drawable/ic_delete"
+            android:padding="7dp"
+            android:clickable="true"
+            android:layout_weight="0" />
+
+        <view
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            class="com.orl.katerina.zametki.CustomView.MenuBtn"
+            android:id="@+id/btnMenu"
+            android:layout_weight="0"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
